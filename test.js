@@ -23,7 +23,7 @@ var msg = new cppMsg.msg(
         ['testObj', 'object', msg_def.msgHead],
         ['testint64', 'int64'],
         ['floatArray3', 'float', , , 3],
-        ['alert', 'string', 10, 'gb2312', 2]
+        ['alert', 'string', 10, 'utf8', 2]
     ]
 );
 //msg.push_int32(2);  // reg

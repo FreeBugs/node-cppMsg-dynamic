@@ -456,7 +456,9 @@ function decodeObject(buf, offset, dsDecode) {
                     break;
                 case DataType.string: {
                     //values  = buf.toString(undefined, off, off+info[1]-1 );
-                    values.push(iconv.decode(buf.slice(off, off + info[1] - 1), 'gb2312'));
+                    var val = iconv.decode(buf.slice(off, off + info[1] - 1), info[4]);
+                    val = val.replace(/\0.*/g, '');
+                    values.push(val);
                 }
                     break;
                 case DataType.object: {

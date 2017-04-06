@@ -1,6 +1,6 @@
 {
   "name": "cppmsg-dynamic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "C++ stuct encoding/decoding with support for (dynamic) arrays. Fork of node-cppMsg.",
   "main": "cppMsg.js",
   "scripts": {

@@ -1,11 +1,11 @@
 # Binary data structure transformation for JavaScript
-## Forked from node-cppMsg because it lacked support for arrays.
+#### Forked from node-cppMsg to integrate new features: dynamic array length and null-terminated strings
 
 ## Installation
 
 Using npm:
 
-    $ npm install cppMsg-dynamic
+    $ npm install cppmsg-dynamic
 
 To run the tests:
 
@@ -131,6 +131,8 @@ Nodejs code:
 ## Changelog
 ### 1.0.0
    1. forked from node-cppMsg and added array support.
+### 1.0.1
+   1. Added support for null terminated strings.
   
    
 ## LICENSE
