@@ -457,7 +457,7 @@ function decodeObject(buf, offset, dsDecode) {
                 case DataType.string: {
                     //values  = buf.toString(undefined, off, off+info[1]-1 );
                     var val = iconv.decode(buf.slice(off, off + info[1] - 1), info[4]);
-                    val = val.replace(/\0.*/g, '');
+                    val = val.replace(/\0[\s\S]*/g, '');
                     values.push(val);
                 }
                     break;
