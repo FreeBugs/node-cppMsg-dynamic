@@ -64,7 +64,7 @@ struct msg{
     unsigned int processID;
     struct head testObj;
     long long testin64;
-    float floatArray3[3];
+	float floatArray3[3];
 };
 ```
 Nodejs code:
@@ -129,17 +129,26 @@ Nodejs code:
 	console.log( msg.encode());
 ```
 ## Changelog
-### 1.0.0
-   1. forked from node-cppMsg and added array support.
+### Merged upstream changes: 1.1.0
+   1. Using ES6 syntax
+   2. optimize performance encodeMsg
+   3. fix int64 decode/encode error( Works only for numbers <= Number.MAX_SAFE_INTEGER ).
+   4. fix object decode error.
+
+### 1.0.1
+   1. string type add encode support(using iconv-lite). 
+
 ### 1.0.1
    1. Added support for null terminated strings.
-  
+   
+### 1.0.0
+   1. forked from node-cppMsg and added array support.
    
 ## LICENSE
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Shudingbo (node-cppMsg)
-Copyright (c) 2017 darnold79 (node-cppMsg-dynamic)
+Copyright (c) 2016-2018 Shudingbo (node-cppMsg)
+Copyright (c) 2017-2018 darnold79 (node-cppMsg-dynamic)
 
 
